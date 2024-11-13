@@ -4,14 +4,14 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import toast from 'react-hot-toast';
+import {toast} from 'react-hot-toast';
 
 const Login = () => {
   const router = useRouter();
 
   const [user, setUser] = useState({
-    email: '',
-    password: '',
+    email: 'lalli@gmail.com',
+    password: 'LalliHood',
   });
 
   const [buttonDisabled, setButtonDisabled] = useState(false);

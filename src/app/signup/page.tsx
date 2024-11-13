@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import toast from 'react-hot-toast';
+import {toast} from 'react-hot-toast';
 
 const Signup = () => {
 
