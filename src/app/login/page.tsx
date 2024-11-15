@@ -10,8 +10,8 @@ const Login = () => {
   const router = useRouter();
 
   const [user, setUser] = useState({
-    email: 'lalli@gmail.com',
-    password: 'LalliHood',
+    email: '',
+    password: '',
   });
 
   const [buttonDisabled, setButtonDisabled] = useState(false);
@@ -83,6 +83,12 @@ const Login = () => {
           >
             Signup
           </Link>
+
+          <button className="w-full flex items-center justify-center mt-4 px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-blue-800 transition-colors duration-300 ease-in-out shadow-md">
+              <Link href="/forgotpassword">
+              Forgot Password
+              </Link>
+          </button>
         </div>
       </div>
     </div>

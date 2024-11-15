@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-import {toast} from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
 export default function Profile() {
