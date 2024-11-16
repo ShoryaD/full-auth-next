@@ -51,7 +51,7 @@ export const sendEmail = async ({email, emailType, userId}: any) => {
                 <p>If the link does not work, copy and paste the URL below into your browser:</p>
                 <p><a href="${process.env.DOMAIN}/${emailType === 'VERIFY' ? "verifyemail" : "resetpassword"}?token=${hashedToken}">${process.env.DOMAIN}/${emailType === 'VERIFY' ? "verifyemail" : "resetpassword"}?token=${hashedToken}</a></p>
             `
-        }        
+        }               
         const mailResponse = await transport.sendMail(mailOptions)
         return mailResponse
 
