@@ -25,7 +25,7 @@ export const sendEmail = async ({email, emailType, userId}: any) => {
             )
         }
 
-        const transport = nodemailer.createTransport
+        var transport = nodemailer.createTransport
         ({
             host: process.env.MAIL_HOST,
             port: Number(process.env.MAIL_PORT),
